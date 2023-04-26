@@ -8,18 +8,15 @@ import {
   Works,
   Feedbacks,
   Contact,
-  EarthCanvas,
-  BallCanvas,
-  ComputersCanvas,
   StarsCanvas,
 } from "./components";
 
-// bg-hero-pattern
+// 
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
+      <div className="relative bg-hero-pattern z-0 bg-primary">
         <div className="bg-cover bg-np-repeat bg-center">
           <Navbar />
           <Hero />
