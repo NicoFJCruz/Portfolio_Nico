@@ -11,7 +11,7 @@ import {
   StarsCanvas,
 } from "./components";
 
-// 
+//
 
 function App() {
   return (
