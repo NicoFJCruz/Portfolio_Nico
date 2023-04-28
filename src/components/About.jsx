@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import ServiceCard from "../commons/ServiceCard";
+import { SectionWrapper } from "../hoc";
 
 const About = () => {
   return (
@@ -18,7 +19,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Siempre he sentido gran interés por el mundo de la informática y la
+        Siempre he sentido gran interés por el mundo de la informática y la 
         tecnología. Estudiando Ingeniería Electromecánica nunca dejé de lado esa
         pasión y he asistido a pequeños cursos relacionados. Realicé un Coding
         Bootcamp, dedicándome diariamente mas de 10 horas a profundizar en
@@ -36,4 +37,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default  SectionWrapper(About, "about");
