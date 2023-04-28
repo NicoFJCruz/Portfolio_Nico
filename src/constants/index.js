@@ -46,7 +46,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Frontend Developer",
       icon: mobile,
     },
     {
@@ -54,7 +54,7 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Algo :D",
       icon: creator,
     },
   ];
@@ -116,55 +116,44 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Devolución de Performance",
+      company_name: "GlobalsNews Group",
+      icon: javascript,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Marzo 2023 - Abril 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Desarrollo web para práctica profesional en equipo de 6 Devs.",
+        "Se desrrolló un sistema para ABM de usuarios, oficinas, equipos, categorías y objetivos por parte de RRHH.",
+        "Cada jefe puede ver objetivos y dar retroalimentación en la cadena jerárquica.",
+        "Se usaron NodeJS, Express, Sequelize, Next.js, Redux, Material UI, GIT y SCRUM.",
+        "Rol prinicipal: Backend Developer."
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "TuneEcommerce: ecommerce",
+      company_name: "Plataforma 5",
+      icon: javascript,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Marzo 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Proyecto académico grupal de 6 Devs.",
+        "Desarrollo de un e-commerce de venta de instrumentos musicales y relacionados.",
+        "Se implementaron las tecnologías NodeJS, Express, Sequelize, React, Redux, CSS y GIT; y la metodología ágil SCRUM.",
+        "Participé en el equipo encargado del desarrollo del backend y colaboré activamente en el frontend.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "TMDB",
+      company_name: "Plataforma 5",
+      icon: javascript,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Febrero 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Proyecto académico individual.",
+        "Consistió en desarrollar una página web desde cero utilizando la API de TMDB.",
+        "Objetivo mostrar información de películas, series y actores con sus respectivos rankings.",
+        "Use las tecnologías NodeJS, Express, Sequelize, React, CSS y GIT.",
+        "Rol fue de Fullstack Developer."
       ],
     },
   ];
