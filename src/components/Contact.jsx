@@ -16,9 +16,44 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        "thx9t1wq7Ygmi_yM5",
+        "template_gu4jmf6",
+        {
+          from_name: form.name,
+          from_email: form.email,
+          to_name: "Nicolás Cruz",
+          to_email: "nicofjcruz@gmail.com",
+          message: form.message,
+        },
+        "thx9t1wq7Ygmi_yM5"
+      )
+      .then(() => {
+        setLoading(false);
+        alert("Gracias por contactarme. Te responderé lo antes posible.");
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+        setLoading(false);
+
+        alert("Algo salió mal.");
+      });
+  };
 
   return (
     <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
@@ -61,11 +96,11 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4"> Tu mensaje </span>
             <textarea
-              rows="7"
-              name="mensaje"
+              rows={7}
+              name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="Que quieres decirme"
+              placeholder="What you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
