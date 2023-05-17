@@ -11,12 +11,10 @@ import {
   StarsCanvas,
 } from "./components";
 
-//
-
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative bg-hero-pattern z-0 bg-primary">
+      <div className="relative bg-gradient-to-b from-red-950 to-blue-950 z-0 bg-primary">
         <div className="bg-cover bg-np-repeat bg-center">
           <Navbar />
           <Hero />
