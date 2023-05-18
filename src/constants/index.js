@@ -23,6 +23,12 @@ import {
     jobit,
     tripguide,
     threejs,
+    cvicon,
+    github,
+    linkedin,
+    arrow,
+    eye,
+    developer
   } from "../assets";
   
   export const navLinks = [
@@ -42,20 +48,20 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
-      icon: web,
+      title: "FullStack Developer",
+      icon: [developer, "", eye],
     },
     {
-      title: "Frontend Developer",
-      icon: mobile,
+      title: "Mi perfil de LinkedIn",
+      icon: [linkedin, arrow, eye],
     },
     {
-      title: "Backend Developer",
-      icon: backend,
+      title: "Mi perfil de Github",
+      icon: [github, arrow, eye],
     },
     {
-      title: "Algo :D",
-      icon: creator,
+      title: "Mi Curriculum Vitae",
+      icon: [cvicon, backend, eye],
     },
   ];
   

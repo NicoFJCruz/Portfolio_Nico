@@ -20,18 +20,29 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import nico from "./Nico.jpg";
+import CVnico from "./NicolasCruz.pdf";
+import cvicon from "./cvicon.png"
+import download from "./download.png"
+import arrow from "./arrow.png"
+import linkedin from "./linkedin.png"
+import eye from "./eye.png"
+import developer from "./developer.png"
 
 export {
+  developer,
+  cvicon,
+  eye,
+  linkedin,
+  download,
+  arrow,
   logo,
   backend,
   creator,
@@ -60,5 +71,6 @@ export {
   carrent,
   jobit,
   tripguide,
-  nico
+  nico,
+  CVnico
 };
