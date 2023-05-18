@@ -14,7 +14,7 @@ import {
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative bg-gradient-to-b from-red-950 to-blue-950 z-0 bg-primary">
+      <div className="relative gradiente z-0">
         <div className="bg-cover bg-np-repeat bg-center">
           <Navbar />
           <Hero />
