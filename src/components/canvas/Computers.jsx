@@ -5,6 +5,7 @@ import CanvasLoader from "../Loader";
 
 const Computers = () => {
   const computer = useGLTF("./my_computer/scene.gltf");
+  
   return (
     <mesh>
       <hemisphereLight intensity={2} groundColor="white" />
@@ -15,9 +16,9 @@ const Computers = () => {
       />
       <primitive
         object={computer.scene}
-        scale={1.8}
-        position={[4.9, 3.6, 1]}
-        rotation={[0, 0, 0]}
+        scale={2.5}
+        position={[7.5, 6, 1]}
+        rotation={[0, Math.PI / 4.5, 0]}
       />
     </mesh>
   );
@@ -28,7 +29,7 @@ const ComputerCanvas = () => {
     <Canvas
       frameloop="demand"
       shadows
-      camera={{ position: [5, 23, -18], fov: 20 }}
+      camera={{ position: [-7, 23, -10], fov: 20 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
