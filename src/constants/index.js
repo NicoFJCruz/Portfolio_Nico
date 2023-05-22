@@ -1,24 +1,16 @@
 import {
-  mobile,
   backend,
-  creator,
-  web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
   redux,
   tailwind,
   nodejs,
-  mongodb,
   git,
-  figma,
-  docker,
   carrent,
   jobit,
   tripguide,
-  threejs,
   cvicon,
   github,
   linkedin,
@@ -113,7 +105,7 @@ const technologies = [
     name: "PostgreSQL",
     icon: postgresql,
   },
-/*   {
+  /*   {
     name: "Express.js",
     icon: expressjs,
   }, */
