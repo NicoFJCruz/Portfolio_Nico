@@ -35,6 +35,13 @@ import arrow from "./arrow.png"
 import linkedin from "./linkedin.png"
 import eye from "./eye.png"
 import developer from "./developer.png"
+import postgresql from "./tech/postgresql.png";
+import mui from "./tech/mui.png";
+import nextjs from "./tech/nextjs.png";
+import bootstrap from "./tech/bootstrap.png";
+import expressjs from "./tech/expressjs.png";
+import sequelize from "./tech/sequelize.png";
+import sqlite from "./tech/sqlite.png";
 
 export {
   developer,
@@ -73,5 +80,12 @@ export {
   tripguide,
   nico,
   CVnico,
-  herobg
+  herobg,
+  postgresql,
+  mui,
+  nextjs,
+  bootstrap,
+  expressjs,
+  sequelize,
+  sqlite
 };
