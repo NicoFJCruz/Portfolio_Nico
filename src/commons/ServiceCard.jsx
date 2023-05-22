@@ -5,11 +5,12 @@ import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
 import { CVnico, cvicon, download } from "../assets";
 import { alerts } from "../utils/alerts";
+import { ToastContainer, toast } from "react-toastify";
 
 const ServiceCard = ({ index, title, icon }) => {
   const notify = (info) => toast(info);
 
-  const handleClick = (index) => {
+  const handleClick = () => {
     const randomNumber = Math.floor(Math.random() * alerts.length);
     alert(alerts[randomNumber]);
   };

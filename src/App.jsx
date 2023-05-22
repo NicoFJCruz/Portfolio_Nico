@@ -11,10 +11,24 @@ import {
   Contact,
   StarsCanvas,
 } from "./components";
+import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   return (
     <BrowserRouter>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+
       <div className="relative z-0">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
