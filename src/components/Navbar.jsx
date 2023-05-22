@@ -25,7 +25,7 @@ const Navbar = () => {
           <img className="w-10 h-10 object-contain rounded" src={logo} alt="logo" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Nicolás Cruz &nbsp; 
-            <span className="sm:block hidden">| FullStack Developer </span>
+            <span className="sm:block hidden">| Desarrollador FullStack </span>
           </p>
         </Link>
         <ul className="list-none sm:flex flex-row gap-10">

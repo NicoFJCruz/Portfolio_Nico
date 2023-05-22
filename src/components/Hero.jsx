@@ -19,7 +19,7 @@ const Hero = () => {
             Hola, soy <span className="text-[#4f46e5]">Nico</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2`}>
-            A Fullstack developer from Argentina.
+            Un desarrollador FullStack de Argentina.
           </p>
         </div>
       </div>
