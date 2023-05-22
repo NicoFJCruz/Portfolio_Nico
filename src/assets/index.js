@@ -42,9 +42,17 @@ import bootstrap from "./tech/bootstrap.png";
 import expressjs from "./tech/expressjs.png";
 import sequelize from "./tech/sequelize.png";
 import sqlite from "./tech/sqlite.png";
+import portfolio from "./portfolio.png";
+import link from "./link.png";
+import performance from "./performanceFeedback.png";
+import tunecommerce from "./tunecommerce.png";
 
 export {
   developer,
+  portfolio,
+  tunecommerce,
+  performance,
+  link,
   cvicon,
   eye,
   linkedin,

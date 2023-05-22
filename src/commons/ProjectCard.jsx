@@ -2,7 +2,7 @@ import React from "react";
 import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
-import { github } from "../assets";
+import { github, link } from "../assets";
 
 const ProjectCard = ({
   name,
@@ -13,14 +13,14 @@ const ProjectCard = ({
   index,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)} className="flex items-stretch">
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-[#172554] p-4 rounded-2xl lg:w-[460px] w-full"
       >
         <div className="realtive w-full h-[230px]">
           <img
@@ -29,16 +29,39 @@ const ProjectCard = ({
             className="w-full h-full object-cover rounded-2xl"
           />
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className="black-gradient w-10 h-10  rounded-full flex justify-center items-center cursor-pointer"
-            >
-              <img
-                src={github}
-                alt="github"
-                className="w-1/2 h-1/2 object-contain"
-              />
+            <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
+              <a
+                href={source_code_link[0]}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="black-gradient w-10 h-10  rounded-full flex justify-center z-10 items-center cursor-pointer"
+              >
+                <img
+                  src={github}
+                  alt="github"
+                  className="w-3/5 h-3/5 object-contain"
+                />
+              </a>
             </div>
+
+            {!source_code_link[1] ? (
+              ""
+            ) : (
+              <div className="absolute inset-0 flex justify-start m-3 card-img_hover">
+                <a
+                  href={source_code_link[1]}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="black-gradient w-10 h-10  rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <img
+                    src={link}
+                    alt="link"
+                    className="w-3/5 h-3/5 object-contain"
+                  />
+                </a>
+              </div>
+            )}
           </div>
         </div>
 
@@ -49,7 +72,7 @@ const ProjectCard = ({
 
         <div className="mt-4 fñex flex-wrap gap-2">
           {tags.map((tag, i) => (
-            <p key={i} className={`text-[14px] ${tag.color}`}>
+            <p key={i} className={`text-[14px] ${tag.color} mr-4 inline-block`} >
               #{tag.name}
             </p>
           ))}

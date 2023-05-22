@@ -8,7 +8,6 @@ import {
   tailwind,
   nodejs,
   git,
-  carrent,
   jobit,
   tripguide,
   cvicon,
@@ -24,6 +23,9 @@ import {
   expressjs,
   sequelize,
   sqlite,
+  portfolio,
+  performance,
+  tunecommerce,
 } from "../assets";
 
 export const navLinks = [
@@ -123,6 +125,98 @@ const technologies = [
   }, */
 ];
 
+const projects = [
+  {
+    name: "Portfolio",
+    description:
+      "Explora mi portfolio como desarrollador web responsive e interactivo. Descubre mis habildiades, stack tecnológico, proyectos, etc. Sumérgete en mi mundo tecnológico y déjate inspirar.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Threejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: portfolio,
+    source_code_link: ["https://github.com/NicoFJCruz/Portfolio_Nico"],
+  },
+  {
+    name: "Performance Feedback",
+    description:
+      "Aplicación web desarrollada en el marco del Bootcamp de Plataforma 5 para una empresa real. Consiste un ABM de usuarios con entidades relacionados y permite conectar, registrar y retroalimentar la cadena jerárquica en base al rendimiento laboral. Duración: 4 semanas.",
+    tags: [
+      {
+        name: "Nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Material UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Scrum",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: performance,
+    source_code_link: [
+      "https://github.com/orgs/FeedbackPerformance/repositories",
+      "https://performance-feedback-client-khaki.vercel.app/",
+    ],
+  },
+  {
+    name: "Tunecommerce",
+    description:
+      "Proyecto en equipo de un ecommerce de instrumentos musicales. Permite al usuario explorar, seleccionar y adquirir en un entorno amigable. Duración: 2 semanas.",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NodeJS,",
+        color: "green-text-gradient",
+      },
+      {
+        name: "PostgreSQL",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Scrum",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+    ],
+    image: tunecommerce,
+    source_code_link: [
+      "https://github.com/NicoFJCruz/Tunecommerce-frontend",
+      "https://tunecommerce-frontend-j4fq.vercel.app/",
+    ],
+  },
+];
+
 const experiences = [
   {
     title: "Devolución de Performance",
@@ -191,72 +285,6 @@ const testimonials = [
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
   },
 ];
 
