@@ -3,7 +3,7 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
-import { CVnico, cvicon, download } from "../assets";
+import { download } from "../assets";
 import { alerts } from "../utils/alerts";
 import { ToastContainer, toast } from "react-toastify";
 
