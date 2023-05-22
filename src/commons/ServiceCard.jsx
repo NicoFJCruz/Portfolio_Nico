@@ -42,7 +42,10 @@ const ServiceCard = ({ index, title, icon }) => {
           </h3>
 
           {title === "Mi Curriculum Vitae" ? (
-            <a href={CVnico} download="CV - Nicolás Cruz">
+            <a
+              href="https://drive.google.com/file/d/1bCkh_xFPtVZHhSU3RfgHWEADzv1a4qtW/view"
+              target="_blank"
+            >
               <img src={download} alt="" className="w-10" />
             </a>
           ) : null}
