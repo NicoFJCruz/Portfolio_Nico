@@ -132,7 +132,7 @@ const projects = [
       "Explora mi portfolio como desarrollador web responsive e interactivo. Descubre mis habildiades, stack tecnológico, proyectos, etc. Sumérgete en mi mundo tecnológico y déjate inspirar.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
@@ -140,7 +140,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "orange-text-gradient",
       },
       {

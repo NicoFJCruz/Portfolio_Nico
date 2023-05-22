@@ -20,7 +20,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-[#172554] p-4 rounded-2xl lg:w-[460px] w-full"
+        className="bg-[#152340] p-4 rounded-2xl lg:w-[460px] w-full"
       >
         <div className="realtive w-full h-[230px]">
           <img
