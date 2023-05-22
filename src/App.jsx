@@ -16,18 +16,7 @@ import { ToastContainer, toast } from "react-toastify";
 function App() {
   return (
     <BrowserRouter>
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      <ToastContainer />
 
       <div className="relative z-0">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
@@ -36,9 +25,9 @@ function App() {
         </div>
         <div className="gradiente">
           <About />
-          <Experience />
           <Tech />
           <Works />
+          <Experience />
           <Feedbacks />
           <div className="relative z-0">
             <Contact />
