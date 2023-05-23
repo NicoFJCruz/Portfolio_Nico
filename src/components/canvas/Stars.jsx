@@ -7,7 +7,7 @@ const Stars = (props) => {
   const ref = useRef();
   const [sphere] = useState(() =>
     random
-      .inSphere(new Float32Array(5000 * 3), { radius: 1.2 })
+      .inSphere(new Float32Array(500 * 3), { radius: 1.2 })
       .filter((value) => !isNaN(value))
   );
 

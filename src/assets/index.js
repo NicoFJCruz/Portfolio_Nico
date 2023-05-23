@@ -45,9 +45,11 @@ import portfolio from "./portfolio.png";
 import link from "./link.png";
 import performance from "./performanceFeedback.png";
 import tunecommerce from "./tunecommerce.png";
+import catcomputer from "./catcomputer.jpeg";
 
 export {
   developer,
+  catcomputer,
   portfolio,
   tunecommerce,
   performance,

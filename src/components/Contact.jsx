@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { catcomputer } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -56,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
+    <div className="xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden justify-items-center items-center">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -100,7 +101,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What you want to say?"
+              placeholder="¿Que quieres comentar?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -116,9 +117,9 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[500px] h-[350px]"
+        className="xl:flex-1 xl:h-auto md:h-[600px] h-[600px]"
       >
-        <EarthCanvas />
+        <img src={catcomputer} alt="" className="rounded-3xl max-w-full max-h-full" />
       </motion.div>
     </div>
   );

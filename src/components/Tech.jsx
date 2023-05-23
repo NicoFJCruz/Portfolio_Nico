@@ -14,8 +14,8 @@ const Tech = () => {
       </div>
 
       <div className="flex flex-row flex-wrap justify-center gap-10">
-        {technologies.map((tec, i) => (
-          <div className=" w-28 h-28" key={i}>
+        {technologies.map((tec) => (
+          <div className=" w-28 h-28" key={tec.name}>
             <LazyLoad height={100} offset={100}>
               <BallCanvas icon={tec.icon} />
             </LazyLoad>

@@ -40,26 +40,26 @@ const ServiceCard = ({ index, title, icon }) => {
             {title}
           </h3>
 
-          {title === "Mi Curriculum Vitae" ? (
+          {title === "Mi Curriculum Vitae" && (
             <a
               href="https://drive.google.com/file/d/1bCkh_xFPtVZHhSU3RfgHWEADzv1a4qtW/view"
               target="_blank"
             >
               <img src={download} alt="" className="w-10" />
             </a>
-          ) : null}
+          )}
 
-          {title === "Mi perfil de Github" ? (
+          {title === "Mi perfil de Github" && (
             <a href="https://github.com/NicoFJCruz" target="_blank">
               <img src={icon[1]} alt="" className="w-10" />
             </a>
-          ) : null}
+          )}
 
-          {title === "Mi perfil de LinkedIn" ? (
+          {title === "Mi perfil de LinkedIn" && (
             <a href="https://www.linkedin.com/in/nicofj-cruz/" target="_blank">
               <img src={icon[1]} alt="" className="w-10" />
             </a>
-          ) : null}
+          )}
         </div>
       </motion.div>
     </Tilt>
