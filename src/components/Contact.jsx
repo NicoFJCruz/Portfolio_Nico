@@ -4,7 +4,8 @@ import emailjs from "@emailjs/browser";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { catcomputer } from "../assets";
+import { catcomputer, github, link, linkedin } from "../assets";
+import { Tooltip } from "antd";
 
 const Contact = () => {
   const formRef = useRef();
@@ -105,12 +106,32 @@ const Contact = () => {
             />
           </label>
 
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md ahadow-primary rounded-xl"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div className="flex justify-around">
+            <button
+              type="submit"
+              className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md ahadow-primary rounded-xl"
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+
+            <Tooltip title="LinkedIn" color="#172554">
+              <a href="https://www.linkedin.com/in/nicofj-cruz/">
+                <img src={linkedin} alt="LinkedIn" className="w-10 h-10 rounded"/>
+              </a>
+            </Tooltip>
+
+            <Tooltip title="GitHub"  color="#172554">
+              <a href="https://github.com/NicoFJCruz">
+                <img src={github} alt="LinkedIn" className="w-10 h-10 rounded"/>
+              </a>
+            </Tooltip>
+
+            <Tooltip title="Mi CV"  color="#172554">
+              <a href="https://drive.google.com/file/d/1bCkh_xFPtVZHhSU3RfgHWEADzv1a4qtW/view">
+                <img src={link} alt="LinkedIn" className="w-10 h-10 rounded"/>
+              </a>
+            </Tooltip>
+          </div>
         </form>
       </motion.div>
 
@@ -118,7 +139,11 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[600px] h-[600px]"
       >
-        <img src={catcomputer} alt="" className="rounded-3xl max-w-full max-h-full" />
+        <img
+          src={catcomputer}
+          alt=""
+          className="rounded-3xl max-w-full max-h-full"
+        />
       </motion.div>
     </div>
   );

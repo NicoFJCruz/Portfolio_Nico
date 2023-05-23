@@ -38,61 +38,6 @@ const About = () => {
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => {
           return <ServiceCard key={service.title} index={index} {...service} />;
-
-          /* return (
-            <Tilt className="xs:w-[250px] w-full" key={index}>
-              <motion.div
-                variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-                className="w-full green-pink-gradient p-[2px] rounded-[20px] shadow-card"
-              >
-                <div
-                  options={{
-                    max: 45,
-                    scale: 1,
-                    speed: 450,
-                  }}
-                  className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col relative"
-                >
-                  <button
-                    className="absolute top-2 right-2 w-4 h-4"
-                    onClick={() => handleClick(index)}
-                  >
-                    <img src={service.icon[2]} alt="" />
-                  </button>
-
-                  <img
-                    src={service.icon[0]}
-                    alt={service.title}
-                    className="w-16 h-16 object-contain"
-                  />
-                  <h3 className="text-white text-[20px] font-bold text-center">
-                    {service.title}
-                  </h3>
-
-                  {service.title === "Mi Curriculum Vitae" ? (
-                    <a href={CVnico} download="CV - Nicolás Cruz">
-                      <img src={download} alt="" className="w-10" />
-                    </a>
-                  ) : null}
-
-                  {service.title === "Mi perfil de Github" ? (
-                    <a href="https://github.com/NicoFJCruz" target="_blank">
-                      <img src={service.icon[1]} alt="" className="w-10" />
-                    </a>
-                  ) : null}
-
-                  {service.title === "Mi perfil de LinkedIn" ? (
-                    <a
-                      href="https://www.linkedin.com/in/nicofj-cruz/"
-                      target="_blank"
-                    >
-                      <img src={service.icon[1]} alt="" className="w-10" />
-                    </a>
-                  ) : null}
-                </div>
-              </motion.div>
-            </Tilt>
-          );*/
         })}
       </div>
     </>
