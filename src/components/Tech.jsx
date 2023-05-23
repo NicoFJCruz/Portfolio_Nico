@@ -6,15 +6,6 @@ import { styles } from "../styles";
 import LazyLoad from "react-lazy-load";
 import { Tooltip } from "antd";
 
-{
-  /* <Tooltip title=`${tec.name}`  color="#172554">
-             <div className=" w-28 h-28" key={tec.name}>
-            <LazyLoad height={100} offset={100}>
-              <BallCanvas icon={tec.icon} />
-            </LazyLoad>
-          </div>
-            </Tooltip> */
-}
 const Tech = () => {
   return (
     <>
@@ -25,8 +16,8 @@ const Tech = () => {
 
       <div className="flex flex-row flex-wrap justify-center gap-10">
         {technologies.map((tec) => (
-          <Tooltip title={`${tec.name}`} color="#172554">
-            <div className=" w-28 h-28" key={tec.name}>
+          <Tooltip title={`${tec.name}`} key={tec.name} color="#172554">
+            <div className=" w-28 h-28">
               <LazyLoad height={100} offset={100}>
                 <BallCanvas icon={tec.icon} />
               </LazyLoad>
