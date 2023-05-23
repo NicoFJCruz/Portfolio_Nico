@@ -41,6 +41,20 @@
   background: linear-gradient(to bottom, #2563eb, transparent);
 }
 
+.blue-gradient2{
+  background: #172554; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #57534e,
+    #172554
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #57534e,
+    #172554
+  );
+}
+
 .green-pink-gradient {
   background: "#00cea8";
   background: linear-gradient(90.13deg, #00cea8 1.9%, #3b82f6 97.5%);
