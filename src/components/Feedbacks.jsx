@@ -13,7 +13,7 @@ const Feedbacks = () => {
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={`${styles.sectionSubText}`}> Feedbakcs </p>
+          <p className={`${styles.sectionSubText}`}> Recomendaciones </p>
           <h2 className={`${styles.sectionHeadText}`}> Testimoniales </h2>
         </motion.div>
       </div>

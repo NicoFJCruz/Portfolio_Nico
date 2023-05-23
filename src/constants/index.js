@@ -1,5 +1,4 @@
 import {
-  backend,
   javascript,
   html,
   css,
@@ -8,8 +7,6 @@ import {
   tailwind,
   nodejs,
   git,
-  jobit,
-  tripguide,
   cvicon,
   github,
   linkedin,
@@ -22,13 +19,12 @@ import {
   bootstrap,
   expressjs,
   sequelize,
-  sqlite,
   portfolio,
   performance,
   tunecommerce,
   p5,
   unsa,
-  iita
+  iita,
 } from "../assets";
 
 export const navLinks = [
@@ -61,7 +57,7 @@ const services = [
   },
   {
     title: "Mi Curriculum Vitae",
-    icon: [cvicon, backend, eye],
+    icon: [cvicon, eye],
   },
 ];
 
@@ -110,10 +106,6 @@ const technologies = [
     name: "PostgreSQL",
     icon: postgresql,
   },
-  /*   {
-    name: "Express.js",
-    icon: expressjs,
-  }, */
   {
     name: "Sequelize",
     icon: sequelize,
@@ -122,10 +114,6 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  /* {
-    name: "SQLite",
-    icon: sqlite,
-  }, */
 ];
 
 const projects = [
@@ -241,10 +229,7 @@ const experiences = [
     icon: unsa,
     iconBg: "#E6DEDD",
     date: "Marzo 2020 - Actualidad",
-    points: [
-      "Ingeniería Electromecánica",
-      "Actaulmente en curso.",
-    ],
+    points: ["Ingeniería Electromecánica", "Actaulmente en curso."],
   },
   {
     title: "Curso WordPress y Android Studio",
@@ -264,27 +249,23 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Compañero desde el primer momento del Coding Bootcamp y puedo dar fe de su excelente nivel académico, profesional y humano. Siempre colaborativo, aportando ideas y conocimientos, creando un ambiente de trabajo agradable, divertido y productivo.",
+    name: "Martín Machado",
+    designation: "Bootcamper",
+    company: "Plataforma 5",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQHXHtaYD0eLKg/profile-displayphoto-shrink_100_100/0/1651522725096?e=1690416000&v=beta&t=Lz1qQqrsB5tieEv3YgMXfIDIndam-FAVxrwrxbU5Efg",
+    link: "https://www.linkedin.com/in/martinmachadodev/",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Trabajé con él en varios proyectos y desde el primer momento demostró su gran capacidad a la hora de resolver problemas, además de su amabilidad y compromiso con el resto del equipo.",
+    name: "Mateo Catalano",
+    designation: "Bootcamper",
+    company: "Plataforma 5",
+    image:
+      "https://media.licdn.com/dms/image/D4D03AQHYWIqaZl18cA/profile-displayphoto-shrink_100_100/0/1682000675771?e=1690416000&v=beta&t=5vBRFJ1WrzUy1U0w8ljwgAeRAJJWIduUWJ6bJD9Pi_A",
+    link: "https://www.linkedin.com/in/mateo-catalano/",
   },
 ];
 
