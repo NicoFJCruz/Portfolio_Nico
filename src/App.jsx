@@ -11,13 +11,10 @@ import {
   Contact,
   StarsCanvas,
 } from "./components";
-import { ToastContainer, toast } from "react-toastify";
 
 function App() {
   return (
     <BrowserRouter>
-      <ToastContainer />
-
       <div className="relative z-0">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />

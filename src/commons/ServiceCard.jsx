@@ -5,14 +5,13 @@ import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
 import { download } from "../assets";
 import { alerts } from "../utils/alerts";
-import { ToastContainer, toast } from "react-toastify";
+import { message } from "antd";
 
 const ServiceCard = ({ index, title, icon }) => {
-  const notify = (info) => toast(info);
-
   const handleClick = () => {
     const randomNumber = Math.floor(Math.random() * alerts.length);
-    alert(alerts[randomNumber]);
+
+    message.info(alerts[randomNumber], 3);
   };
 
   return (

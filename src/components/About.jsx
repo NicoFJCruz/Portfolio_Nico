@@ -5,19 +5,9 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import ServiceCard from "../commons/ServiceCard";
 import { SectionWrapper } from "../hoc";
-import { nico, CVnico, cvicon, download } from "../assets";
-import { ToastContainer, toast } from "react-toastify";
-import { MotionConfig } from "framer-motion";
-import { Tilt } from "react-tilt";
-import { alerts } from "../utils/alerts";
+import { nico } from "../assets";
 
 const About = () => {
-  const notify = (info) => toast(info);
-
-  const handleClick = () => {
-    const randomNumber = Math.floor(Math.random() * alerts.length);
-    notify(alerts[randomNumber]);
-  };
   return (
     <>
       <motion.div variants={textVariant()}>

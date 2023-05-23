@@ -28,7 +28,6 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import nico from "./Nico.jpg";
-import CVnico from "./NicolasCruz.pdf";
 import cvicon from "./cvicon.png"
 import download from "./download.png"
 import arrow from "./arrow.png"
@@ -87,7 +86,6 @@ export {
   jobit,
   tripguide,
   nico,
-  CVnico,
   herobg,
   postgresql,
   mui,
