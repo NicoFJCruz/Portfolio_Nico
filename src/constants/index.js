@@ -251,7 +251,7 @@ const testimonials = [
     testimonial:
       "Compañero desde el primer momento del Coding Bootcamp y puedo dar fe de su excelente nivel académico, profesional y humano. Siempre colaborativo, aportando ideas y conocimientos, creando un ambiente de trabajo agradable, divertido y productivo.",
     name: "Martín Machado",
-    designation: "Bootcamper",
+    designation: "FullStack Developer",
     company: "Plataforma 5",
     image:
       "https://media.licdn.com/dms/image/C4D03AQHXHtaYD0eLKg/profile-displayphoto-shrink_100_100/0/1651522725096?e=1690416000&v=beta&t=Lz1qQqrsB5tieEv3YgMXfIDIndam-FAVxrwrxbU5Efg",
@@ -261,7 +261,7 @@ const testimonials = [
     testimonial:
       "Trabajé con él en varios proyectos y desde el primer momento demostró su gran capacidad a la hora de resolver problemas, además de su amabilidad y compromiso con el resto del equipo.",
     name: "Mateo Catalano",
-    designation: "Bootcamper",
+    designation: "FullStack Developer",
     company: "Plataforma 5",
     image:
       "https://media.licdn.com/dms/image/D4D03AQHYWIqaZl18cA/profile-displayphoto-shrink_100_100/0/1682000675771?e=1690416000&v=beta&t=5vBRFJ1WrzUy1U0w8ljwgAeRAJJWIduUWJ6bJD9Pi_A",

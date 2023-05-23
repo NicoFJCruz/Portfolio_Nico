@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 import FeedbackCard from "../commons/FeedbackCard";
 
