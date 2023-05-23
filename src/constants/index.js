@@ -26,6 +26,9 @@ import {
   portfolio,
   performance,
   tunecommerce,
+  p5,
+  unsa,
+  iita
 } from "../assets";
 
 export const navLinks = [
@@ -129,7 +132,7 @@ const projects = [
   {
     name: "Portfolio",
     description:
-      "Explora mi portfolio como desarrollador web responsive e interactivo. Descubre mis habildiades, stack tecnológico, proyectos, etc. Sumérgete en mi mundo tecnológico y déjate inspirar.",
+      "Explora mi portfolio,responsive e interactivo, de desarrollador web . Descubre mis habildiades, stack tecnológico, proyectos, etc. Sumérgete en mi mundo tecnológico y déjate inspirar.",
     tags: [
       {
         name: "React",
@@ -219,44 +222,41 @@ const projects = [
 
 const experiences = [
   {
-    title: "Devolución de Performance",
-    company_name: "GlobalsNews Group",
-    icon: javascript,
+    title: "Fullstack Developer",
+    company_name: "Plataforma 5",
+    icon: p5,
     iconBg: "#383E56",
-    date: "Marzo 2023 - Abril 2023",
+    date: "Enero 2023 - Abril 2023",
     points: [
-      "Desarrollo web para práctica profesional en equipo de 6 Devs.",
-      "Se desrrolló un sistema para ABM de usuarios, oficinas, equipos, categorías y objetivos por parte de RRHH.",
-      "Cada jefe puede ver objetivos y dar retroalimentación en la cadena jerárquica.",
-      "Se usaron NodeJS, Express, Sequelize, Next.js, Redux, Material UI, GIT y SCRUM.",
-      "Rol prinicipal: Backend Developer.",
+      "Curso intensivo teórico/práctico de programación JavaScript FullStack Developer.",
+      "Full-time, con duración de 14 semanas y mas de 800 horas de cursada.",
+      "Sólidos conocimientos en JavaScript, React, Redux NodeJS, Express, Sequelize, PostgreSQL, Git.",
+      "Pair-programming, metodologías ágiles Scrum, reuniones semanales para mejorar habilidades blandas.",
+      "Proyectos individuales, grupales y prácticas profesionales con empresas reales.",
     ],
   },
   {
-    title: "TuneEcommerce: ecommerce",
-    company_name: "Plataforma 5",
-    icon: javascript,
+    title: "Carrera de Grado",
+    company_name: "Universidad Nacional de Salta",
+    icon: unsa,
     iconBg: "#E6DEDD",
-    date: "Marzo 2023",
+    date: "Marzo 2020 - Actualidad",
     points: [
-      "Proyecto académico grupal de 6 Devs.",
-      "Desarrollo de un e-commerce de venta de instrumentos musicales y relacionados.",
-      "Se implementaron las tecnologías NodeJS, Express, Sequelize, React, Redux, CSS y GIT; y la metodología ágil SCRUM.",
-      "Participé en el equipo encargado del desarrollo del backend y colaboré activamente en el frontend.",
+      "Ingeniería Electromecánica",
+      "Actaulmente en curso.",
     ],
   },
   {
-    title: "TMDB",
-    company_name: "Plataforma 5",
-    icon: javascript,
+    title: "Curso WordPress y Android Studio",
+    company_name: "Iita Salta",
+    icon: iita,
     iconBg: "#383E56",
-    date: "Febrero 2023",
+    date: "Junio 2021 - Octubre 2021",
     points: [
-      "Proyecto académico individual.",
-      "Consistió en desarrollar una página web desde cero utilizando la API de TMDB.",
-      "Objetivo mostrar información de películas, series y actores con sus respectivos rankings.",
-      "Use las tecnologías NodeJS, Express, Sequelize, React, CSS y GIT.",
-      "Rol fue de Fullstack Developer.",
+      "CURSO WORDPRESS:",
+      "Conceptos y habilidades necesarias para realizar un sitio web de e-commerce con Wordpress.",
+      "CURSO ANDROID STUDIO:",
+      "Introducción a los conceptos básicos de Android Studio para el desarrollo de aplicaciones.",
     ],
   },
 ];

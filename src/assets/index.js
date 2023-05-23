@@ -24,6 +24,9 @@ import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
+import p5 from "./company/p5.png";
+import unsa from "./company/unsa.png";
+import iita from "./company/iita.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
@@ -49,6 +52,7 @@ import catcomputer from "./catcomputer.jpeg";
 
 export {
   developer,
+  iita,
   catcomputer,
   portfolio,
   tunecommerce,
@@ -95,5 +99,7 @@ export {
   bootstrap,
   expressjs,
   sequelize,
-  sqlite
+  sqlite,
+  p5,
+  unsa
 };
