@@ -57,7 +57,7 @@ const services = [
   },
   {
     title: "Mi Curriculum Vitae",
-    icon: [cvicon, eye],
+    icon: [cvicon, "", eye],
   },
 ];
 
@@ -269,4 +269,23 @@ const testimonials = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const alerts = [
+  "La curiosidad mató al gato.",
+  "Nací en Miami, Estados Unidos.",
+  "Si apretas otra vez tendrás otro dato.",
+  "Me encantan de los superhéroes, especialmente Spiderman.",
+  "La programación es una gran pasión que tengo.",
+  "Un gran plan es sentarse con una gran taza de café y programar.",
+  "Otros de mis gustos es Star Wars.",
+  "Soy un gran fánatico del fútbol.",
+  "Tengo preferencia por el Backend, pero también me divierto en el Frontend.",
+  "La risa es contagiosa, incluso si no sabes por qué te ríes.",
+  "En el comienzo de JavaScrip no existía la igualdad estricta 😮.",
+  "El primer progamador de la historia es mujer y se llamaba: Ada Lovelace.",
+  "El primer 'bug' fue en realidad una polilla de verdad que estaba en la computadora.",
+  "He vivido desde los 4 años en Salta, Argentina.",
+  "En mi pasión futbolera, soy hincha del Boca Juniors.",
+  "Si estás interesado en mi perfil, no dudes en contactarme 😉."
+];
+
+export { services, technologies, experiences, testimonials, projects, alerts };

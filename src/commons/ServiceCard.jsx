@@ -4,8 +4,8 @@ import { Tilt } from "react-tilt";
 import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
 import { download } from "../assets";
-import { alerts } from "../utils/alerts";
 import { message } from "antd";
+import { alerts } from "../constants";
 
 const ServiceCard = ({ index, title, icon }) => {
   const handleClick = () => {
@@ -29,10 +29,10 @@ const ServiceCard = ({ index, title, icon }) => {
           className="bg-[#152340] rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col relative"
         >
           <button
-            className="absolute top-2 right-2 w-4 h-4"
+            className="absolute top-2 right-2 w-4 h-4 "
             onClick={() => handleClick(index)}
           >
-            <img src={icon[2]} alt="" />
+            <img src={icon[2]} alt="alert"/>
           </button>
 
           <img src={icon[0]} alt={title} className="w-16 h-16 object-contain" />
