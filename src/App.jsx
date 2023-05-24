@@ -1,5 +1,4 @@
 import { BrowserRouter } from "react-router-dom";
-import { herobg } from "./assets";
 import {
   Hero,
   Navbar,
@@ -11,6 +10,7 @@ import {
   Contact,
   StarsCanvas,
 } from "./components";
+import LazyLoad from "react-lazy-load";
 
 function App() {
   return (
@@ -28,7 +28,9 @@ function App() {
           <Feedbacks />
           <div className="relative z-0">
             <Contact />
-            <StarsCanvas />
+            <LazyLoad>
+              <StarsCanvas />
+            </LazyLoad>
           </div>
         </div>
       </div>

@@ -22,7 +22,7 @@ const Computers = () => {
   const computer = useGLTF("./my_computer/scene.gltf");
   const scale = windowWidth > 768 ? 2.5 : 1.5;
   const positionX = windowWidth > 768 ? 7.5 : 5;
-  const positionY = windowWidth > 768 ? 6 : 3.4;
+  const positionY = windowWidth > 768 ? 6 : 3;
 
   return (
     <mesh>
