@@ -14,6 +14,21 @@ const ServiceCard = ({ index, title, icon }) => {
     message.info(alerts[randomNumber], 3);
   };
 
+  const links = {
+    "Mi Curriculum Vitae": {
+      href: "https://drive.google.com/file/d/1bCkh_xFPtVZHhSU3RfgHWEADzv1a4qtW/view",
+      imgSrc: download,
+    },
+    "Mi perfil de Github": {
+      href: "https://github.com/NicoFJCruz",
+      imgSrc: icon[1],
+    },
+    "Mi perfil de LinkedIn": {
+      href: "https://www.linkedin.com/in/nicofj-cruz/",
+      imgSrc: icon[1],
+    },
+  };
+
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
@@ -32,33 +47,37 @@ const ServiceCard = ({ index, title, icon }) => {
             className="absolute top-2 right-2 w-4 h-4 "
             onClick={() => handleClick(index)}
           >
-            <img src={icon[2]} alt="alert"/>
+            <img src={icon[2]} alt="alert" />
           </button>
 
-          <img src={icon[0]} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
-          </h3>
+          {title in links ? (
+            <a href={links[title].href} target="_blank">
+              <div className="flex items-center flex-col relative ">
+                <img
+                  src={icon[0]}
+                  alt={title}
+                  className="w-16 h-16 object-contain mb-5"
+                />
+                <h3 className="text-white text-[20px] font-bold text-center mb-5">
+                  {title}
+                </h3>
 
-          {title === "Mi Curriculum Vitae" && (
-            <a
-              href="https://drive.google.com/file/d/1bCkh_xFPtVZHhSU3RfgHWEADzv1a4qtW/view"
-              target="_blank"
-            >
-              <img src={download} alt="" className="w-10" />
+                <img src={links[title].imgSrc} alt="" className="w-10" />
+              </div>
             </a>
-          )}
+          ) : (
+            <div className="flex items-center flex-col relative ">
+              <img
+                src={icon[0]}
+                alt={title}
+                className="w-16 h-16 object-contain mb-5"
+              />
+              <h3 className="text-white text-[20px] font-bold text-center mb-5">
+                {title}
+              </h3>
 
-          {title === "Mi perfil de Github" && (
-            <a href="https://github.com/NicoFJCruz" target="_blank">
               <img src={icon[1]} alt="" className="w-10" />
-            </a>
-          )}
-
-          {title === "Mi perfil de LinkedIn" && (
-            <a href="https://www.linkedin.com/in/nicofj-cruz/" target="_blank">
-              <img src={icon[1]} alt="" className="w-10" />
-            </a>
+            </div>
           )}
         </div>
       </motion.div>
