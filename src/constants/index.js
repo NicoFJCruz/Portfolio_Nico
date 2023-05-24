@@ -19,10 +19,10 @@ import arrow from "../assets/arrow.png";
 import cvicon from "../assets/cvicon.png";
 import developer from "../assets/developer.png";
 import eye from "../assets/eye.png";
-import github from "../assets/github.png";
+import github from "../assets/github.webp";
 import linkedin from "../assets/linkedin.png";
 import performance from "../assets/performanceFeedback.png";
-import portfolio from "../assets/portfolio.png";
+import portfolio from "../assets/portfolio.webp";
 import tunecommerce from "../assets/tunecommerce.png";
 
 export const navLinks = [

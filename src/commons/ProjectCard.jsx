@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Tilt } from "react-tilt";
 import { fadeIn } from "../utils/motion";
-import github from "../assets/github.png";
+import github from "../assets/github.webp";
 import link from "../assets/link.png";
 
 const ProjectCard = ({

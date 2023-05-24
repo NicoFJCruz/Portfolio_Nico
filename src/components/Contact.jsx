@@ -6,9 +6,9 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
 import linkedin from "../assets/linkedin.png";
-import github from "../assets/github.png";
+import github from "../assets/github.webp";
 import link from "../assets/link.png";
-import catcomputer from "../assets/catcomputer.jpeg";
+import catcomputer from "../assets/catcomputer.webp";
 
 const Contact = () => {
   const formRef = useRef();
