@@ -5,10 +5,13 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { catcomputer, github, link, linkedin } from "../assets";
-import { Tooltip } from "antd";
+import { Tooltip, message } from "antd";
 
 const Contact = () => {
   const formRef = useRef();
+  const service = import.meta.env.VITE_SERVICE;
+  const template = import.meta.env.VITE_TEMPLATE;
+  const public_key = import.meta.env.VITE_PUBLIC_KEY;
 
   const [form, setForm] = useState({
     name: "",
@@ -23,13 +26,25 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
+    const validations = [
+      { field: form.name, message: "Por favor coloque su nombre" },
+      { field: form.email, message: "Por favor coloque su email" },
+      { field: form.message, message: "Por favor escriba un mensaje" },
+    ];
+
+    for (const validation of validations) {
+      if (!validation.field) {
+        return message.warning(validation.message);
+      }
+    }
+
     setLoading(true);
 
     emailjs
       .send(
-        "service_klyk5w8",
-        "template_gu4jmf6",
+        service,
+        template,
         {
           from_name: form.name,
           from_email: form.email,
@@ -37,11 +52,13 @@ const Contact = () => {
           to_email: "nicofjcruz@gmail.com",
           message: form.message,
         },
-        "thx9t1wq7Ygmi_yM5"
+        public_key
       )
       .then(() => {
         setLoading(false);
-        alert("Gracias por contactarme. Te responderé lo antes posible.");
+        message.success(
+          "Gracias por contactarme. Te responderé lo antes posible."
+        );
         setForm({
           name: "",
           email: "",
@@ -52,7 +69,7 @@ const Contact = () => {
         console.log(error);
         setLoading(false);
 
-        alert("Algo salió mal.");
+        message.error("Algo salió mal. Cualquier inconveniente puedes contactarme por otras redes.");
       });
   };
 
@@ -115,7 +132,10 @@ const Contact = () => {
             </button>
 
             <Tooltip title="LinkedIn" color="#172554">
-              <a href="https://www.linkedin.com/in/nicofj-cruz/">
+              <a
+                href="https://www.linkedin.com/in/nicofj-cruz/"
+                target="_blank"
+              >
                 <img
                   src={linkedin}
                   alt="LinkedIn"
@@ -125,7 +145,7 @@ const Contact = () => {
             </Tooltip>
 
             <Tooltip title="GitHub" color="#172554">
-              <a href="https://github.com/NicoFJCruz">
+              <a href="https://github.com/NicoFJCruz" target="_blank">
                 <img
                   src={github}
                   alt="LinkedIn"
@@ -135,7 +155,10 @@ const Contact = () => {
             </Tooltip>
 
             <Tooltip title="Mi CV" color="#172554">
-              <a href="https://drive.google.com/file/d/1bCkh_xFPtVZHhSU3RfgHWEADzv1a4qtW/view">
+              <a
+                href="https://drive.google.com/file/d/1bCkh_xFPtVZHhSU3RfgHWEADzv1a4qtW/view"
+                target="_blank"
+              >
                 <img src={link} alt="LinkedIn" className="w-10 h-10 rounded" />
               </a>
             </Tooltip>

@@ -13,4 +13,11 @@ export default defineConfig({
       ),
     },
   },
+  define: {
+    "process.env": {
+      VITE_SERVICE: JSON.stringify(process.env.VITE_SERVICE),
+      VITE_TEMPLATE: JSON.stringify(process.env.VITE_TEMPLATE),
+      VITE_PUBLIC_KEY: JSON.stringify(process.env.VITE_PUBLIC_KEY),
+    },
+  },
 });
