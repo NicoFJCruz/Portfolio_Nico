@@ -229,7 +229,7 @@ const experiences = [
     icon: unsa,
     iconBg: "#E6DEDD",
     date: "Marzo 2020 - Actualidad",
-    points: ["Ingeniería Electromecánica", "Actaulmente en curso."],
+    points: ["Ingeniería Electromecánica", "Actualmente en curso."],
   },
   {
     title: "Curso WordPress y Android Studio",
