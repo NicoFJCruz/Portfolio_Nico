@@ -1,8 +1,8 @@
-import React from "react";
-import { fadeIn } from "../utils/motion";
 import { motion } from "framer-motion";
+import React from "react";
 import { Tilt } from "react-tilt";
 import { github, link } from "../assets";
+import { fadeIn } from "../utils/motion";
 
 const ProjectCard = ({
   name,

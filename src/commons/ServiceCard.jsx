@@ -1,11 +1,10 @@
-import { MotionConfig } from "framer-motion";
+import { message } from "antd";
+import { motion } from "framer-motion";
 import React from "react";
 import { Tilt } from "react-tilt";
-import { fadeIn } from "../utils/motion";
-import { motion } from "framer-motion";
 import { download } from "../assets";
-import { message } from "antd";
 import { alerts } from "../constants";
+import { fadeIn } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => {
   const handleClick = () => {

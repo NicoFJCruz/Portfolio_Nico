@@ -1,11 +1,11 @@
-import React from "react";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
-import ServiceCard from "../commons/ServiceCard";
-import { SectionWrapper } from "../hoc";
+import React from "react";
 import { nico } from "../assets";
+import ServiceCard from "../commons/ServiceCard";
+import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const About = () => {
   return (

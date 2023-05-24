@@ -1,8 +1,7 @@
-import React, { useEffect, useState, Suspense } from "react";
-import { Canvas, useThree } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { Canvas, useThree } from "@react-three/fiber";
+import React, { Suspense, useEffect, useState } from "react";
 import CanvasLoader from "../Loader";
-import LazyLoad from "react-lazy-load";
 
 const Computers = () => {
   const { size } = useThree();

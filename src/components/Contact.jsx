@@ -1,11 +1,11 @@
-import { motion } from "framer-motion";
-import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { message, Tooltip } from "antd";
+import { motion } from "framer-motion";
+import React, { useRef, useState } from "react";
 import { catcomputer, github, link, linkedin } from "../assets";
-import { Tooltip, message } from "antd";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();

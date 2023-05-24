@@ -1,10 +1,10 @@
-import React from "react";
-import { BallCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
-import { technologies } from "../constants";
-import { styles } from "../styles";
-import LazyLoad from "react-lazy-load";
 import { Tooltip } from "antd";
+import React from "react";
+import LazyLoad from "react-lazy-load";
+import { technologies } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { BallCanvas } from "./canvas";
 
 const Tech = () => {
   return (

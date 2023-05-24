@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
 import FeedbackCard from "../commons/FeedbackCard";
+import { testimonials } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { textVariant } from "../utils/motion";
 
 const Feedbacks = () => {
   return (
