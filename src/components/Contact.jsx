@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-12 flex xl:flex-row flex-col gap-10 overflow-hidden justify-items-center items-center">
+    <div className="xl:mt-2 xl:flex-row flex-col flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl max-w-full max-h-full"
@@ -68,10 +68,10 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="mt-10 flex flex-col gap-8"
+          className="mt-5 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4"> Tu nombre </span>
+            <span className="text-white font-medium mb-1"> Tu nombre </span>
             <input
               type="text"
               name="name"
@@ -116,19 +116,27 @@ const Contact = () => {
 
             <Tooltip title="LinkedIn" color="#172554">
               <a href="https://www.linkedin.com/in/nicofj-cruz/">
-                <img src={linkedin} alt="LinkedIn" className="w-10 h-10 rounded"/>
+                <img
+                  src={linkedin}
+                  alt="LinkedIn"
+                  className="w-10 h-10 rounded"
+                />
               </a>
             </Tooltip>
 
-            <Tooltip title="GitHub"  color="#172554">
+            <Tooltip title="GitHub" color="#172554">
               <a href="https://github.com/NicoFJCruz">
-                <img src={github} alt="LinkedIn" className="w-10 h-10 rounded"/>
+                <img
+                  src={github}
+                  alt="LinkedIn"
+                  className="w-10 h-10 rounded"
+                />
               </a>
             </Tooltip>
 
-            <Tooltip title="Mi CV"  color="#172554">
+            <Tooltip title="Mi CV" color="#172554">
               <a href="https://drive.google.com/file/d/1bCkh_xFPtVZHhSU3RfgHWEADzv1a4qtW/view">
-                <img src={link} alt="LinkedIn" className="w-10 h-10 rounded"/>
+                <img src={link} alt="LinkedIn" className="w-10 h-10 rounded" />
               </a>
             </Tooltip>
           </div>
@@ -137,7 +145,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[600px] h-[600px]"
+        className="xl:flex-1 xl:h-auto md:h-[750px] xs:h-[550px] h-[350px] mt-[8%]"
       >
         <img
           src={catcomputer}
