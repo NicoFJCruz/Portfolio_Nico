@@ -2,10 +2,13 @@ import emailjs from "@emailjs/browser";
 import { message, Tooltip } from "antd";
 import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
-import { catcomputer, github, link, linkedin } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
+import linkedin from "../assets/linkedin.png";
+import github from "../assets/github.png";
+import link from "../assets/link.png";
+import catcomputer from "../assets/catcomputer.jpeg";
 
 const Contact = () => {
   const formRef = useRef();
@@ -26,7 +29,7 @@ const Contact = () => {
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const validations = [
       { field: form.name, message: "Por favor coloque su nombre" },
       { field: form.email, message: "Por favor coloque su email" },
@@ -69,7 +72,9 @@ const Contact = () => {
         console.log(error);
         setLoading(false);
 
-        message.error("Algo salió mal. Cualquier inconveniente puedes contactarme por otras redes.");
+        message.error(
+          "Algo salió mal. Cualquier inconveniente puedes contactarme por otras redes."
+        );
       });
   };
 

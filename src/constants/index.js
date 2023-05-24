@@ -1,31 +1,29 @@
-import {
-  javascript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  git,
-  cvicon,
-  github,
-  linkedin,
-  arrow,
-  eye,
-  developer,
-  postgresql,
-  mui,
-  nextjs,
-  bootstrap,
-  expressjs,
-  sequelize,
-  portfolio,
-  performance,
-  tunecommerce,
-  p5,
-  unsa,
-  iita,
-} from "../assets";
+import iita from "../assets/company/iita.png";
+import unsa from "../assets/company/unsa.png";
+import p5 from "../assets/company/p5.png";
+import bootstrap from "../assets/tech/bootstrap.png";
+import css from "../assets/tech/css.png";
+import expressjs from "../assets/tech/expressjs.png";
+import git from "../assets/tech/git.png";
+import html from "../assets/tech/html.png";
+import javascript from "../assets/tech/javascript.png";
+import mui from "../assets/tech/mui.png";
+import nextjs from "../assets/tech/nextjs.png";
+import nodejs from "../assets/tech/nodejs.png";
+import postgresql from "../assets/tech/postgresql.png";
+import reactjs from "../assets/tech/reactjs.png";
+import redux from "../assets/tech/redux.png";
+import sequelize from "../assets/tech/sequelize.png";
+import tailwind from "../assets/tech/tailwind.png";
+import arrow from "../assets/arrow.png";
+import cvicon from "../assets/cvicon.png";
+import developer from "../assets/developer.png";
+import eye from "../assets/eye.png";
+import github from "../assets/github.png";
+import linkedin from "../assets/linkedin.png";
+import performance from "../assets/performanceFeedback.png";
+import portfolio from "../assets/portfolio.png";
+import tunecommerce from "../assets/tunecommerce.png";
 
 export const navLinks = [
   {
@@ -285,7 +283,7 @@ const alerts = [
   "El primer 'bug' fue en realidad una polilla de verdad que estaba en la computadora.",
   "He vivido desde que tengo 4 años de edad en Salta, Argentina.",
   "En mi pasión futbolera, soy hincha del Boca Juniors.",
-  "Si estás interesado en mi perfil, no dudes en contactarme 😉."
+  "Si estás interesado en mi perfil, no dudes en contactarme 😉.",
 ];
 
 export { services, technologies, experiences, testimonials, projects, alerts };

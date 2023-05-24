@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { close, logo, menu } from "../assets";
 import { navLinks } from "../constants";
 import { styles } from "../styles";
+import close from "../assets/close.svg";
+import menu from "../assets/menu.svg";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -56,13 +58,17 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
           <div
-            className={`${ !toggle ? "hidden" : "flex"} p-6 blue-gradient2 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            className={`${
+              !toggle ? "hidden" : "flex"
+            } p-6 blue-gradient2 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {navLinks.map((link) => (
                 <li
                   key={link.id}
-                  className={`${active === link.title ? "text-[#DE4C36]" : "text-white"} font-poppins font-medium cursor-pointer text-[16px] hover:text-[#DE4C36]`}
+                  className={`${
+                    active === link.title ? "text-[#DE4C36]" : "text-white"
+                  } font-poppins font-medium cursor-pointer text-[16px] hover:text-[#DE4C36]`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);

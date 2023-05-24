@@ -2,9 +2,9 @@ import { message } from "antd";
 import { motion } from "framer-motion";
 import React from "react";
 import { Tilt } from "react-tilt";
-import { download } from "../assets";
 import { alerts } from "../constants";
 import { fadeIn } from "../utils/motion";
+import download from "../assets/download.png";
 
 const ServiceCard = ({ index, title, icon }) => {
   const handleClick = () => {
