@@ -28,10 +28,12 @@ const About = () => {
           Siempre he sentido gran interés por el mundo de la informática y la
           tecnología. Estudiando Ingeniería Electromecánica nunca dejé de lado
           esa pasión y he asistido a pequeños cursos relacionados. Realicé un
-          Coding Bootcamp, dedicándome diariamente mas de 10 horas a profundizar
-          en nuevas habilidades técnicas y blandas. Ahora, mi objetivo es
-          trabajar en el rubro IT, donde pueda seguir aprendiendo y avanzando en
-          este campo que tanto disfruto y en el que siempre he querido estar.
+          Coding Bootcamp, dedicándo más de 10 horas diarias a profundizar
+          en nuevas habilidades técnicas y blandas. Ahora, mi objetivo principal
+          en el rubro IT es continuar aprendiendo y avanzando en este campo que
+          tanto disfruto y que siempre he querido estar. Estoy comprometido con
+          el constante desarrollo y evolución, y emocionado por las
+          posibilidades que el futuro me ofrece.
         </motion.p>
       </div>
 

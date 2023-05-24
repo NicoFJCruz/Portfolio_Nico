@@ -9,6 +9,7 @@ import {
   Feedbacks,
   Contact,
   StarsCanvas,
+  Footer,
 } from "./components";
 import LazyLoad from "react-lazy-load";
 
@@ -31,6 +32,9 @@ function App() {
             <LazyLoad>
               <StarsCanvas />
             </LazyLoad>
+          </div>
+          <div>
+            <Footer />
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import LazyLoad from "react-lazy-load";
 
 const Hero = () => {
   return (
@@ -24,7 +25,9 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      <LazyLoad height={900}>
+          <ComputersCanvas />
+      </LazyLoad>
 
       <div className="absolute bottom-12 w-full flex justify-center items-center mt-50">
         <a href="#about">

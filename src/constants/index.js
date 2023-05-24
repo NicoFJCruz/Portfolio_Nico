@@ -283,7 +283,7 @@ const alerts = [
   "En el comienzo de JavaScrip no existía la igualdad estricta 😮.",
   "El primer progamador de la historia es mujer y se llamaba: Ada Lovelace.",
   "El primer 'bug' fue en realidad una polilla de verdad que estaba en la computadora.",
-  "He vivido desde los 4 años en Salta, Argentina.",
+  "He vivido desde que tengo 4 años de edad en Salta, Argentina.",
   "En mi pasión futbolera, soy hincha del Boca Juniors.",
   "Si estás interesado en mi perfil, no dudes en contactarme 😉."
 ];
