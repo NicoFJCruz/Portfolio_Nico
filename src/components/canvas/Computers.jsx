@@ -6,10 +6,12 @@ import CanvasLoader from "../Loader";
 const Computers = () => {
   const { size } = useThree();
   const [windowWidth, setWindowWidth] = useState(size.width);
+  const [windowHeight, setWindowHeight] = useState(size.height);
 
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(size.width);
+      setWindowHeight(size.height);
     };
 
     window.addEventListener("resize", handleResize);
@@ -17,12 +19,12 @@ const Computers = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [size.width]);
+  }, [size.width, size.height]);
 
   const computer = useGLTF("./my_computer/scene.gltf");
-  const scale = windowWidth > 768 ? 2.5 : 1.5;
-  const positionX = windowWidth > 768 ? 7.5 : 5;
-  const positionY = windowWidth > 768 ? 6 : 3;
+  const scale = windowWidth < 768 || windowHeight < 800 ? 1.5 : 2.5;
+  const positionX = windowWidth < 768 || windowHeight < 800 ?  5 : 7.5;
+  const positionY = windowWidth < 768 || windowHeight < 800 ? 3 : 6;
 
   return (
     <mesh>
